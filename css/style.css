@@ -66,10 +66,16 @@ header {
   justify-content: center;
   align-items: center;
 }
+header .header-box {
+  z-index: 1;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
 header h1 {
   font-size: 2rem;
-  text-align: center;
   line-height: 2.4rem;
+  margin-bottom: 50px;
 }
 @media screen and (min-width: 680px) {
   header h1 {
@@ -80,6 +86,37 @@ header h1 {
   header h1 {
     font-size: 5.4rem;
   }
+}
+header p {
+  margin-bottom: 40px;
+  width: 60%;
+  line-height: 2.2rem;
+  font-size: 1.3rem;
+}
+header a {
+  text-align: center;
+  text-decoration: none;
+  line-height: 60px;
+  color: inherit;
+  font-weight: bolder;
+  font-size: 110%;
+  width: 200px;
+  height: 60px;
+  background-color: rgba(166, 115, 96, 0.6705882353);
+  border-radius: 6px;
+  transition: 0.5s;
+}
+header a:hover {
+  background-color: #A67360;
+  transform: translateX(10px);
+}
+header::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 
 /*# sourceMappingURL=style.css.map */
