@@ -19,23 +19,34 @@ header {
 
     h1 {
        font-size: 2rem;
+       line-height: 3.6rem;
+       margin-bottom: 50px;
+
        @include md-screen {
           font-size: 3.4rem;
        }
        @include lg-screen {
           font-size: 5.4rem;
+          line-height: 4.8rem;
        }
      //   text-align: center;
-       line-height: 2.4rem;
        
-       margin-bottom: 50px;
     }
 
     p {
      margin-bottom: 40px;
-     width: 60%;
+     width: 90%;
      line-height: 2.2rem;
-     font-size: 1.3rem;
+     font-size: 1.1rem;
+     
+     @include md-screen {
+      width: 60%;
+      font-size: 1.2rem;
+     }
+     
+     @include lg-screen {
+      width: 50%;
+     }
     }
 
     a {
