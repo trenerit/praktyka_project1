@@ -1,4 +1,25 @@
 @use 'variables' as *;
+@use 'mixins' as *;
+
+@keyframes show-menu-action {
+    from {
+        scale: 0;
+    }
+    to {
+        scale: 1;
+    }
+}
+
+@keyframes hide-menu-action {
+    from {
+        // scale: 1;
+        display: block;
+    }
+    to {
+        scale: 0;
+        display: none;
+    }
+}
 
 nav {
     display: flex;
@@ -25,4 +46,63 @@ nav {
 .material-icons {
     color: inherit;
     font-size: 3rem;
+    cursor: pointer;
+}
+
+.navigation {
+
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    @include md-screen {
+        width: 50%;
+    }
+    @include lg-screen {
+        width: 25%;
+    }
+    z-index: 2;
+    background-color: $color6;
+    animation: hide-menu-action .5s;
+    color: $color7;
+
+    .material-icons {
+        color: $color7;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+
+    ul {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    li {
+        flex-basis: 10%;
+        width: 100%;
+    }
+    
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        transition-duration: .5s;
+        font-size: 140%;
+        &:hover {
+            background-color: $color5-transparent;
+        }
+    }
+}
+
+
+.showMenu {
+    display: block;
+    animation: show-menu-action .5s;
 }
