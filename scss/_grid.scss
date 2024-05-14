@@ -1,0 +1,59 @@
+@use 'mixins' as *;
+
+.container {
+
+    width: 100%;
+    padding: 0 20px;
+
+    @include md-screen {
+        width: 600px;
+        margin: 0 auto;
+    }
+    
+    @include lg-screen {
+        width: 1000px;
+    }
+
+}
+
+.row {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    @include md-screen {
+        flex-direction: row;
+    }
+}
+
+.col {
+
+    width: 100%;
+    padding: 20px;
+
+    &-md25 {
+        @include md-screen {
+            flex: 0 0 25%;
+        }
+    }
+    
+    &-md50 {
+        @include md-screen {
+            flex: 0 0 50%;
+        }
+    }
+    
+    &-lg25 {
+        @include lg-screen {
+            flex: 0 0 25%;
+        }
+    }
+    
+    &-lg50 {
+        @include lg-screen {
+            flex: 0 0 50%;
+        }
+    }
+
+}
