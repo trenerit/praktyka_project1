@@ -2,6 +2,11 @@ section {
     min-height: 100vh;
     padding-top: 65px;
 
+    &:nth-of-type(even) {
+        background-color: whitesmoke;
+        // background: url('../assets/img/bg-header.webp') center/cover fixed;
+    }
+
     h2 {
         text-align: center;
         font-size: 2.8rem;

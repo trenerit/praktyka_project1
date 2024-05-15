@@ -38,6 +38,12 @@
         }
     }
     
+    &-md33 {
+        @include md-screen {
+            flex: 0 0 33.333333%;
+        }
+    }
+    
     &-md50 {
         @include md-screen {
             flex: 0 0 50%;
