@@ -326,6 +326,41 @@ section p {
   line-height: 1.4rem;
 }
 
+.menu-box {
+  box-shadow: 0 0 10px gray;
+  border-radius: 6px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition-duration: 0.5s;
+}
+.menu-box:hover {
+  opacity: 1;
+  box-shadow: 0 0 20px gray;
+}
+.menu-box-picture {
+  height: 160px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+.menu-box .picture1 {
+  background: url("../assets/img/pizza1.webp") center/cover;
+}
+.menu-box .picture2 {
+  background: url("../assets/img/pizza2.webp") center/cover;
+}
+.menu-box .picture3 {
+  background: url("../assets/img/pizza3.webp") center/cover;
+}
+.menu-box .picture4 {
+  background: url("../assets/img/pizza4.webp") center/cover;
+}
+.menu-box-text {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 footer {
   height: 30vh;
   background-color: #0D0D0D;

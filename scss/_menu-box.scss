@@ -1,0 +1,36 @@
+.menu-box {
+
+    box-shadow: 0 0 10px gray;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: .8;
+    transition-duration: .5s;
+
+    &:hover {
+        opacity: 1;
+        box-shadow: 0 0 20px gray;
+    }
+
+    &-picture {
+
+        height: 160px;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        
+    }
+    
+    @for $i from 1 to 5 {
+        .picture#{$i} {
+            background: url('../assets/img/pizza#{$i}.webp') center/cover;
+        }
+    }
+
+
+    &-text {
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
