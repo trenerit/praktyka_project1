@@ -361,20 +361,35 @@ section p {
   align-items: center;
 }
 
-label {
+input, textarea, label {
   display: block;
   margin-bottom: 5px;
-  font-family: inherit;
   width: 100%;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 
-input {
-  display: block;
-  margin-bottom: 5px;
+input, textarea {
   font-family: inherit;
-  width: 100%;
-  font-size: 1.6rem;
+  padding: 10px;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  outline: 0;
+  transition: 0.5s;
+}
+input:focus, textarea:focus {
+  border-color: gray;
+}
+input[type=submit], textarea[type=submit] {
+  margin-top: 30px;
+  transition: 0.5s;
+}
+input[type=submit]:hover, textarea[type=submit]:hover {
+  background-color: lightgray;
+}
+
+textarea {
+  resize: none;
+  height: 200px;
 }
 
 footer {
