@@ -392,6 +392,24 @@ textarea {
   height: 200px;
 }
 
+.alert {
+  width: 50%;
+  padding: 10px;
+  border-radius: 4px;
+}
+.alert-danger {
+  background-color: rgba(255, 48, 48, 0.6);
+}
+.alert-success {
+  width: 100%;
+  margin: 20px auto;
+  text-align: center;
+  padding: 15px;
+  font-size: 1.6rem;
+  background-color: rgba(2, 46, 2, 0.6);
+  color: whitesmoke;
+}
+
 footer {
   height: 30vh;
   background-color: #0D0D0D;
